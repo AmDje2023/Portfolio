@@ -110,25 +110,20 @@
         slideShadows: false,
       },
     });
-      const swipeIndicator = document.querySelector('.swipe-indicator');
-      const swiperEl = document.querySelector('.swiper');
+     const swipeIndicator = document.querySelector('.swipe-indicator');
+const swiperEl = document.querySelector('.swiper');
 
-      function hideSwipeIndicator() {
-        if (swipeIndicator) {
-          swipeIndicator.style.display = 'none';
-        }
-      }
+function hideIndicator() {
+  if (swipeIndicator) {
+    swipeIndicator.style.opacity = '0';
+    setTimeout(() => swipeIndicator.style.display = 'none', 500);
+  }
+}
 
-      // Mobile : au premier touch
-      swiperEl.addEventListener('touchstart', hideSwipeIndicator, { once: true });
+// Sur clic / touch sur le slider
+swiperEl.addEventListener('click', hideIndicator);
+swiperEl.addEventListener('touchstart', hideIndicator);
 
-      // Desktop : au premier clic ou drag
-      swiperEl.addEventListener('mousedown', hideSwipeIndicator, { once: true });
-
-      // Optionnel : si on clique directement sur l’indicateur lui-même
-      if(swipeIndicator){
-        swipeIndicator.addEventListener('click', hideSwipeIndicator, { once: true });
-      }
 
   </script>
 
@@ -138,3 +133,4 @@
 </body>
 
 </html>
+
