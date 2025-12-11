@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My car</title>
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600&display=swap" rel="stylesheet">
+
+  <!-- Style perso -->
+  <link rel="stylesheet" href="../css/projet1.css">
+
+  <!-- GSAP -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+</head>
+
+<body>
+
+  <header>
+    <h1>My car</h1>
+    <p>Une description générale du projet, ses objectifs, ses technologies, etc.</p>
+  </header>
+
+  <!-- SECTION 1 -->
+  <section class="block reveal">
+    <div class="text">
+      <h2>Titre Section 1</h2>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+        Hic temporibus aut dolore quaerat repellendus assumenda expedita.
+      </p>
+    </div>
+
+    <div class="image">
+      <img src="https://picsum.photos/600/400?random=1">
+    </div>
+  </section>
+
+  <!-- SECTION 2 -->
+  <section class="block reverse reveal">
+    <div class="text">
+      <h2>Titre Section 2</h2>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+        Maxime soluta dignissimos nihil perferendis quae!
+      </p>
+    </div>
+
+    <div class="image">
+      <img src="https://picsum.photos/600/400?random=2">
+    </div>
+  </section>
+
+  <!-- SECTION 3 -->
+  <section class="block reveal">
+    <div class="text">
+      <h2>Titre Section 3</h2>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+        Exercitationem recusandae ratione, dignissimos odio ipsum!
+      </p>
+    </div>
+
+    <div class="image">
+      <img src="https://picsum.photos/600/400?random=3">
+    </div>
+  </section>
+
+  <!-- SECTION 4 -->
+  <section class="block reverse reveal">
+    <div class="text">
+      <h2>Titre Section 4</h2>
+      <p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+        Asperiores voluptas architecto vero omnis.
+      </p>
+    </div>
+
+    <div class="image">
+      <img src="https://picsum.photos/600/400?random=4">
+    </div>
+  </section>
+
+  <!-- SECTION 5 -->
+  <section class="block reveal">
+    <div class="text">
+      <h2>Titre Section 5</h2>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        Necessitatibus quis dolorem placeat atque nobis?
+      </p>
+    </div>
+
+    <div class="image">
+      <img src="https://picsum.photos/600/400?random=5">
+    </div>
+  </section>
+
+  <script>
+    gsap.registerPlugin(ScrollTrigger);
+
+    gsap.utils.toArray(".reveal").forEach((elem) => {
+      gsap.from(elem, {
+        scrollTrigger: {
+          trigger: elem,
+          start: "top 80%",
+          toggleActions: "play none none none",
+        },
+        opacity: 0,
+        y: 80,
+        duration: 1,
+        ease: "power3.out"
+      });
+    });
+  </script>
+
+</body>
+
+</html>

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <!-- CSS globaux -->
+    <link rel="stylesheet" href="../css/contact.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/menu.css">
+</head>
+<body>
+    <div class="cursor"></div>
+
+    <!-- NAVIGATION FIXE EN HAUT -->
+    <nav class="nav">
+      <div class="nav_top-wrapper">
+        <div class="nav_top">
+          <!-- TOP LINKS -->
+
+          <a href="#" class="nav_menu" data-nav="menu-button">
+            <div class="nav_menu_line top" data-nav="menu-line"></div>
+            <div class="nav_menu_line bottom" data-nav="menu-line"></div>
+          </a>
+
+        </div>
+        <div class="nav_top-line"></div>
+      </div>
+
+      <div class="nav_bottom-wrapper is-hidden" data-nav="bottom-wrapper">
+
+        <div class="nav_bottom_link-wrapper">
+          <div class="nav_link-wrapper">
+            <a nav-number="01" href="../index.html" class="nav_link is-large" data-nav="bottom-link">Accueil</a>
+          </div>
+        </div>
+
+        <div class="nav_bottom_line" data-nav="bottom-line"></div>
+
+        <div class="nav_bottom_link-wrapper">
+          <div class="nav_link-wrapper">
+            <a nav-number="02" href="./about.html" class="nav_link is-large" data-nav="bottom-link">A propos</a>
+          </div>
+        </div>
+
+        <div class="nav_bottom_line" data-nav="bottom-line"></div>
+
+        <div class="nav_bottom_link-wrapper">
+          <div class="nav_link-wrapper">
+            <a nav-number="03" href="./project.html" class="nav_link is-large" data-nav="bottom-link">Projets</a>
+          </div>
+        </div>
+
+        <div class="nav_bottom_line" data-nav="bottom-line"></div>
+
+        <div class="nav_bottom_link-wrapper">
+          <div class="nav_link-wrapper">
+            <a nav-number="04" href="contact.html" class="nav_link is-large" data-nav="bottom-link">Contacts</a>
+          </div>
+        </div>
+
+      </div>
+    </nav>
+
+    <div class="scroll-container">
+        <!-- Screens Section -->
+        <section class="fullscreen-section screens-section">
+            <div class="screens-wrapper">
+                <!-- Texte à gauche -->
+                <div class="screen-container left-screen">
+                    <div class="screen-content">
+                        <h2 data-split>Contactez-moi</h2>
+                        <p>Vous pouvez me joindre par téléphone ou par email pour toute collaboration ou question :</p>
+                        <ul class="contact-info">
+                            <li>Téléphone : 06 97 725 953</li>
+                            <li>Email : a.djellabi96@gmail.com</li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- Cube à droite -->
+                <div class="screen-container right-screen">
+                    <div class="screen-visual">
+                        <div class="floating-cube" id="main-cube">
+                            <div class="face front">⟁</div>
+                            <div class="face back">⟁</div>
+                            <div class="face left">⟁</div>
+                            <div class="face right">⟁</div>
+                            <div class="face top">⟁</div>
+                            <div class="face bottom">⟁</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- JS -->
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+    <script src="https://unpkg.com/split-type"></script>
+    <script src="../js/contact.js"></script>
+    <script type="module" src="../js/menu.js"></script>
+</body>
+</html>
