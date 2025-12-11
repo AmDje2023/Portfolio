@@ -163,4 +163,36 @@ body {
 .controls button:nth-child(2):is(:hover, :focus-visible) {
   transform: scale(1.25);
 }
- 
+ .swipe-indicator {
+  position: fixed;
+  bottom: 80px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: rgba(0, 0, 0, 0.6);
+  color: white;
+  padding: 10px 20px;
+  border-radius: 25px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 1.1rem;
+  z-index: 1000;
+  user-select: none;
+  animation: pulse 2s infinite;
+  cursor: pointer;
+}
+
+.swipe-indicator .hand {
+  font-size: 1.5rem;
+  animation: hand-move 2s infinite;
+}
+
+@keyframes hand-move {
+  0%, 100% { transform: translateX(0); }
+  50% { transform: translateX(-10px); }
+}
+
+@keyframes pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.6; }
+}
