@@ -209,13 +209,18 @@ body {
 
 /* — Responsive (mobile / petits écrans) — */
 
+
 @media (max-width: 768px) {
   .nav_top-wrapper {
-    align-items: center !important;
-    height: 50px; /* fixe la hauteur pour éviter les décalages */
+    height: 60px;
+    display: flex;
+    align-items: center;
   }
 
   .nav_menu {
-    justify-content: center !important;
+    height: 24px;
+    justify-content: space-between;
   }
+}
+
 }
