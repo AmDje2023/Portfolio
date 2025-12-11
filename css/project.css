@@ -189,14 +189,16 @@ body {
 
 @keyframes slide-hand {
   0% { transform: translateX(0); }
-  100% { transform: translateX(15px); }
+  100% { transform: translateX(20px); } /* un peu plus large sur desktop */
 }
+
 
 
 @keyframes bounce {
   0% { transform: translateY(0); }
   100% { transform: translateY(-10px); }
 }
+
 
 
 
