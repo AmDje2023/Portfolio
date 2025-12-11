@@ -194,4 +194,46 @@ html, body {
         margin: 0 auto;
     }
 }
+/* --- Mise en page mobile : cube en dessous, centré correctement --- */
+@media (max-width: 900px) {
+
+    /* Passe bien le layout en colonne */
+    .screens-wrapper {
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        gap: 3rem;
+        padding: 2rem 1rem;
+    }
+
+    /* Le bloc texte */
+    .left-screen {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .left-screen .screen-content {
+        max-width: 90%;
+        margin-bottom: 2rem;
+    }
+
+    /* Le bloc cube */
+    .right-screen {
+        width: 100%;
+        display: flex;
+        justify-content: center !important;
+        align-items: center !important;
+        margin: 0 !important;
+    }
+
+    .floating-cube {
+        margin: 0 auto;
+        width: 150px;
+        height: 150px;
+    }
+}
+
 
