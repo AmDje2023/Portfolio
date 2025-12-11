@@ -1,0 +1,176 @@
+/* Réglages globaux */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color: #00ff88;
+    --secondary-color: #0088ff;
+    --accent-color: #ff0088;
+    --bg-dark: #0a0a0a;
+    --bg-darker: #050505;
+    --text-light: #ffffff;
+    --text-gray: #888888;
+}
+
+html, body {
+    height: 100%;
+    overflow: hidden;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    background: var(--bg-darker);
+    color: var(--text-light);
+    cursor: none;
+}
+
+.cursor {
+    width: 20px;
+    height: 20px;
+    border: 2px solid var(--primary-color);
+    border-radius: 50%;
+    position: fixed;
+    pointer-events: none;
+    z-index: 10000;
+    mix-blend-mode: difference;
+    transition: transform 0.1s ease;
+}
+
+.cursor.hover {
+    transform: scale(1.5);
+    background: var(--primary-color);
+}
+
+.scroll-container {
+    height: 100vh;
+    overflow-y: scroll;
+    scroll-snap-type: y mandatory;
+    scroll-behavior: smooth;
+}
+
+.fullscreen-section {
+    height: 100vh;
+    scroll-snap-align: start;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Screens Section */
+.screens-section {
+    background: linear-gradient(135deg, #0c0c0c 0%, #1a1a1a 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.screens-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 100%;
+    max-width: 1400px;
+    padding: 0 2rem;
+    align-items: center;
+    justify-content: space-between; /* cube collé à droite */
+    gap: 4rem;
+}
+
+.screen-container {
+    position: relative;
+}
+
+/* Texte à gauche */
+.left-screen h2 {
+    font-size: clamp(2rem, 5vw, 3.5rem);
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+    background: linear-gradient(45deg, var(--text-light), var(--secondary-color));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.left-screen p {
+    font-size: 1.1rem;
+    color: var(--text-gray);
+    line-height: 1.6;
+    margin-bottom: 2rem;
+}
+
+/* Cube à droite */
+.right-screen {
+    margin-left: auto; /* cube complètement à droite */
+}
+
+.floating-cube {
+    width: 200px;
+    height: 200px;
+    position: relative;
+    transform-style: preserve-3d;
+    transform: rotateX(25deg) rotateY(25deg);
+    transition: transform 0.1s ease;
+}
+
+.floating-cube .face {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    border: 2px solid var(--primary-color);
+    background: rgba(0, 255, 136, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    color: var(--primary-color);
+}
+
+.floating-cube .front  { transform: rotateY(0deg) translateZ(100px); }
+.floating-cube .back   { transform: rotateY(180deg) translateZ(100px); }
+.floating-cube .left   { transform: rotateY(-90deg) translateZ(100px); }
+.floating-cube .right  { transform: rotateY(90deg) translateZ(100px); }
+.floating-cube .top    { transform: rotateX(90deg) translateZ(100px); }
+.floating-cube .bottom { transform: rotateX(-90deg) translateZ(100px); }
+
+/* Responsive */
+@media (max-width: 968px) {
+    .screens-wrapper {
+        grid-template-columns: 1fr;
+        text-align: center;
+        gap: 2rem;
+    }
+    
+    .floating-cube {
+        width: 150px;
+        height: 150px;
+    }
+    
+    .floating-cube .face {
+        width: 150px;
+        height: 150px;
+    }
+    
+    .floating-cube .front  { transform: rotateY(0deg) translateZ(75px); }
+    .floating-cube .back   { transform: rotateY(180deg) translateZ(75px); }
+    .floating-cube .left   { transform: rotateY(-90deg) translateZ(75px); }
+    .floating-cube .right  { transform: rotateY(90deg) translateZ(75px); }
+    .floating-cube .top    { transform: rotateX(90deg) translateZ(75px); }
+    .floating-cube .bottom { transform: rotateX(-90deg) translateZ(75px); }
+}
+
+@media (max-width: 768px) {
+    .cursor {
+        display: none;
+    }
+    
+    body {
+        cursor: auto;
+    }
+    
+    .screens-wrapper {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+    
+    .floating-cube {
+        margin: 0 auto;
+    }
+}

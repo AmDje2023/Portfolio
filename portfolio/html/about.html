@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>contact</title>
+    <link rel="stylesheet" href="../css/about.css">
+    <link rel="stylesheet" href="../css/style.css">
+<link rel="stylesheet" href="../css/menu.css">
+</head>
+<body>
+  <!-- NAVIGATION GSAP -->
+<nav class="nav">
+  <div class="nav_top-wrapper">
+    <div class="nav_top">
+      <!-- TOP LINKS -->
+
+      <a href="#" class="nav_menu" data-nav="menu-button">
+        <div class="nav_menu_line top" data-nav="menu-line"></div>
+        <div class="nav_menu_line bottom" data-nav="menu-line"></div>
+      </a>
+
+    </div>
+    <div class="nav_top-line"></div>
+  </div>
+
+  <div class="nav_bottom-wrapper is-hidden" data-nav="bottom-wrapper">
+
+    <div class="nav_bottom_link-wrapper">
+      <div class="nav_link-wrapper">
+        <a nav-number="01" href="../index.html" class="nav_link is-large" data-nav="bottom-link">Accueil</a>
+      </div>
+    </div>
+
+    <div class="nav_bottom_line" data-nav="bottom-line"></div>
+
+    <div class="nav_bottom_link-wrapper">
+      <div class="nav_link-wrapper">
+        <a nav-number="02" href="about.html" class="nav_link is-large" data-nav="bottom-link">A propos</a>
+      </div>
+    </div>
+
+    <div class="nav_bottom_line" data-nav="bottom-line"></div>
+
+    <div class="nav_bottom_link-wrapper">
+      <div class="nav_link-wrapper">
+        <a nav-number="03" href="./project.html" class="nav_link is-large" data-nav="bottom-link">Projets</a>
+      </div>
+    </div>
+
+    <div class="nav_bottom_line" data-nav="bottom-line"></div>
+
+    <div class="nav_bottom_link-wrapper">
+      <div class="nav_link-wrapper">
+        <a nav-number="04" href="./contact.html" class="nav_link is-large" data-nav="bottom-link">Contacts</a>
+      </div>
+    </div>
+
+  </div>
+</nav>
+
+    <div class="cursor"></div>
+
+    <div class="scroll-container">
+
+        <!-- SECTION PRINCIPALE -->
+      <section class="fullscreen-section screens-section">
+    <div class="screens-wrapper">
+        
+        <!-- TEXTE À GAUCHE -->
+        <div class="screen-container left-screen">
+            <div class="screen-content">
+                <h2>À propos de moi</h2>
+
+                <p class="about-text">
+                    Je m'appelle Amina Djellabi, Je suis und développeuse web passionné par la création d’expériences 
+                    modernes, rapides et élégantes. Avec plusieurs projets réalisés en 
+                    front-end et back-end, j'aime transformer des idées en interfaces 
+                    interactives et dynamiques. JS, animations, performance et design 
+                    sont mes terrains de jeu.
+                </p>
+
+                <div class="tech-stack">
+                    <div class="tech-item">HTML</div>
+                    <div class="tech-item">CSS</div>
+                    <div class="tech-item">JavaScript</div>
+                    <div class="tech-item">GSAP</div>
+                    <div class="tech-item">PHP</div>
+                    <div class="tech-item">ASP.net Core</div>
+                   <div class="tech-item">SQL</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- PHOTO À DROITE -->
+        <div class="screen-container right-screen">
+            <div class="photo-grid">
+                <div class="piece" id="p1"></div>
+                <div class="piece" id="p2"></div>
+                <div class="piece" id="p3"></div>
+                <div class="piece" id="p4"></div>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+    <script src="https://unpkg.com/split-type"></script>
+    <script type="module" src="../js/menu.js"></script>
+    <script src="../js/about.js"></script>
+</body>
+</html>
