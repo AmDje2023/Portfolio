@@ -23,3 +23,11 @@ function randomColors (count) {
         .fill(0)
         .map(() => "#" + Math.floor(Math.random() * 16777215).toString(16).padStart(6, '0'))
 }
+function updateVH() {
+  document.documentElement.style.setProperty('--vh', `${window.innerHeight * 0.01}px`);
+}
+
+document.addEventListener("DOMContentLoaded", () => {
+  updateVH();
+});
+window.addEventListener('resize', updateVH);
