@@ -111,7 +111,7 @@
         slideShadows: false,
       },
     });
-   const swipeIndicator = document.querySelector('.swipe-indicator');
+const swipeIndicator = document.querySelector('.swipe-indicator');
 const swiperEl = document.querySelector('.swiper');
 
 function hideIndicator() {
@@ -121,9 +121,12 @@ function hideIndicator() {
   }
 }
 
-// Sur clic / touch sur le slider
-swiperEl.addEventListener('click', hideIndicator);
+// Sur mobile
 swiperEl.addEventListener('touchstart', hideIndicator);
+
+// Sur desktop
+swiperEl.addEventListener('mousedown', hideIndicator);
+
 
 
 
@@ -135,6 +138,7 @@ swiperEl.addEventListener('touchstart', hideIndicator);
 </body>
 
 </html>
+
 
 
 
