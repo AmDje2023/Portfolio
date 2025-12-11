@@ -184,12 +184,19 @@ body {
 
 .swipe-indicator .hand {
   font-size: 2rem;
-  animation: bounce 1s infinite alternate;
+  animation: slide-hand 1s infinite alternate;
 }
+
+@keyframes slide-hand {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(15px); }
+}
+
 
 @keyframes bounce {
   0% { transform: translateY(0); }
   100% { transform: translateY(-10px); }
 }
+
 
 
