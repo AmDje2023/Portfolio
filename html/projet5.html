@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DevStore - Présentation</title>
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600&display=swap" rel="stylesheet">
+
+  <!-- Style perso -->
+  <link rel="stylesheet" href="../css/projet1.css">
+
+  <!-- GSAP -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+</head>
+
+<body>
+
+<a href="project.html" class="btn-retour">⬅ Retour</a>
+
+<header>
+  <h1>Pourquoi devstore?</h1>
+  <p>
+    DevStore est une plateforme moderne dédiée à la présentation et à la vente de solutions numériques.
+    Ce projet a été conçu avec une vision professionnelle : offrir une expérience fluide,
+    élégante et interactive pour présenter des sites web, applications et jeux digitaux.
+    Il met en avant des technologies récentes et une approche centrée sur l’utilisateur.
+  </p>
+</header>
+
+<section class="demo">
+  <h2>Voir la demo</h2>
+
+  <a href="https://devstore-dz.netlify.app/" target="_blank">
+    <img src="../img/dev1.png" alt="Demo DevStore">
+    <div class="overlay">Cliquez ici</div>
+  </a>
+</section>
+
+<!-- SECTION 1 -->
+<section class="block reveal">
+  <div class="text">
+    <h2>Interface moderne et immersive</h2>
+    <p>
+      DevStore propose une interface utilisateur haut de gamme avec un design sombre,
+      des effets visuels avancés et une navigation intuitive. L’objectif est de donner
+      une sensation professionnelle et premium, proche des grandes plateformes digitales.
+    </p>
+  </div>
+
+  <div class="image">
+    <img src="../img/dev1.png">
+  </div>
+</section>
+
+<!-- SECTION AUTH -->
+<section class="block reverse reveal">
+  <div class="text">
+    <h2>Système d’authentification sécurisé</h2>
+    <p>
+      DevStore intègre un système d’authentification permettant de sécuriser l’accès
+      aux fonctionnalités avancées du site.
+      <br><br>
+      Les utilisateurs doivent créer un compte ou se connecter afin d’accéder aux
+      démonstrations complètes des projets. Sans authentification, l’accès est limité
+      et certaines fonctionnalités restent bloquées.
+      <br><br>
+      ✔ Accès aux démos uniquement après connexion<br>
+      ✔ Protection du contenu premium<br>
+      ✔ Gestion des utilisateurs<br>
+      <br>
+      Ce système garantit une meilleure sécurité et permet de contrôler l’accès
+      aux ressources du site.
+    </p>
+  </div>
+
+  <div class="image">
+    <img src="../img/dev2.png">
+  </div>
+</section>
+  
+<!-- SECTION 3 -->
+<section class="block reveal">
+  <div class="text">
+    <h2>Animations avancées avec GSAP</h2>
+    <p>
+      Le site utilise la bibliothèque GSAP pour créer des animations fluides et dynamiques.
+      Les éléments apparaissent au scroll, les transitions sont naturelles et améliorent
+      fortement l’expérience utilisateur, rendant le site vivant et interactif.
+    </p>
+  </div>
+
+  <div class="image">
+    <img src="../img/dev2.png">
+  </div>
+</section>
+
+<!-- SECTION 3 -->
+<section class="block reverse reveal">
+  <div class="text">
+    <h2>Système dynamique et intelligent</h2>
+    <p>
+      DevStore intègre un système dynamique de gestion des produits avec JavaScript.
+      Les contenus peuvent être ajoutés, modifiés ou supprimés facilement via une interface admin.
+      Le site peut également être connecté à une base de données (comme Supabase)
+      pour une gestion complète et professionnelle.
+    </p>
+  </div>
+
+  <div class="image">
+    <img src="../img/dev3.png">
+  </div>
+</section>
+
+<!-- SECTION 4 -->
+<section class="block  reveal">
+  <div class="text">
+    <h2>Technologies modernes utilisées</h2>
+    <p>
+      Ce projet repose sur des technologies web modernes :
+      <br><br>
+      ✔ HTML5 & CSS3 pour la structure et le design<br>
+      ✔ JavaScript pour la logique dynamique<br>
+      ✔ GSAP pour les animations avancées<br>
+      ✔ Supabase pour la gestion des données et authentification<br>
+      <br>
+      Le tout permet de créer une plateforme rapide, responsive et évolutive.
+    </p>
+  </div>
+    <div class="image">
+    <img src="../img/dev4">
+  </div>
+</section>
+
+<script>
+  gsap.registerPlugin(ScrollTrigger);
+
+  gsap.utils.toArray(".reveal").forEach((elem) => {
+    gsap.from(elem, {
+      scrollTrigger: {
+        trigger: elem,
+        start: "top 80%",
+        toggleActions: "play none none none",
+      },
+      opacity: 0,
+      y: 80,
+      duration: 1,
+      ease: "power3.out"
+    });
+  });
+</script>
+
+</body>
+</html>
