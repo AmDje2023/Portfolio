@@ -4,119 +4,133 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>App_art</title>
+  <title>DevStore</title>
 
-  <!-- Google Font -->
   <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/projet-devstore.css">
 
-  <!-- Style perso -->
-  <link rel="stylesheet" href="../css/projet1.css">
-
-  <!-- GSAP -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
 </head>
 
 <body>
 
-  <header>
-    <h1>App_art</h1>
-    <p>Une description générale du projet, ses objectifs, ses technologies, etc.</p>
-  </header>
-<a href="project.html" class="btn-retour">⬅ Retour</a>
-  <!-- SECTION 1 -->
-  <section class="block reveal">
-    <div class="text">
-      <h2>Titre Section 1</h2>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-        Hic temporibus aut dolore quaerat repellendus assumenda expedita.
-      </p>
-    </div>
+<a href="projects.html" class="btn-retour">⬅ Retour</a>
 
-    <div class="image">
-      <img src="https://picsum.photos/600/400?random=1">
-    </div>
-  </section>
+<header>
+  <h1>DevStore — Plateforme de solutions numériques</h1>
+  <p>
+    DevStore est une plateforme moderne développée pour présenter et tester des solutions numériques complètes :
+    sites web, applications et jeux interactifs.  
+    Le projet a été conçu avec une interface hautement moderne, des animations fluides et une expérience utilisateur immersive.
+  </p>
 
-  <!-- SECTION 2 -->
-  <section class="block reverse reveal">
-    <div class="text">
-      <h2>Titre Section 2</h2>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-        Maxime soluta dignissimos nihil perferendis quae!
-      </p>
-    </div>
+  <p>
+    Ce projet est réalisé avec des technologies web modernes telles que HTML5, CSS3, JavaScript, GSAP pour les animations,
+    et Supabase pour la gestion des données et de l’authentification.
+    L’objectif est de proposer un système professionnel, esthétique et fonctionnel prêt pour un usage réel.
+  </p>
 
-    <div class="image">
-      <img src="https://picsum.photos/600/400?random=2">
-    </div>
-  </section>
+  <p style="color:#7c5cfc; font-weight:600;">
+    ✔ Ce projet est entièrement responsive, bien structuré et optimisé pour les performances.
+  </p>
 
-  <!-- SECTION 3 -->
-  <section class="block reveal">
-    <div class="text">
-      <h2>Titre Section 3</h2>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
-        Exercitationem recusandae ratione, dignissimos odio ipsum!
-      </p>
-    </div>
+</header>
 
-    <div class="image">
-      <img src="https://picsum.photos/600/400?random=3">
-    </div>
-  </section>
+<!-- SECTION 1 -->
+<section class="block reveal">
+  <div class="text">
+    <h2>Interface moderne & immersive</h2>
+    <p>
+      L’interface de DevStore est conçue avec un design premium, utilisant des gradients, des effets de glow et une typographie moderne.
+      L’objectif est de donner une sensation de produit haut de gamme dès la première interaction.
+    </p>
+  </div>
 
-  <!-- SECTION 4 -->
-  <section class="block reverse reveal">
-    <div class="text">
-      <h2>Titre Section 4</h2>
-      <p>
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-        Asperiores voluptas architecto vero omnis.
-      </p>
-    </div>
+  <div class="image">
+    <img src="../img/dev1.png" alt="Interface DevStore">
+  </div>
+</section>
 
-    <div class="image">
-      <img src="https://picsum.photos/600/400?random=4">
-    </div>
-  </section>
+<!-- SECTION 2 -->
+<section class="block reverse reveal">
+  <div class="text">
+    <h2>Système de démos interactives</h2>
+    <p>
+      Chaque produit dispose d’une démo interactive intégrée via iframe.
+      Les utilisateurs peuvent tester directement les projets avant toute prise de contact ou achat.
+    </p>
+  </div>
 
-  <!-- SECTION 5 -->
-  <section class="block reveal">
-    <div class="text">
-      <h2>Titre Section 5</h2>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-        Necessitatibus quis dolorem placeat atque nobis?
-      </p>
-    </div>
+  <div class="image">
+    <img src="../img/dev2.png" alt="Démos interactives DevStore">
+  </div>
+</section>
 
-    <div class="image">
-      <img src="https://picsum.photos/600/400?random=5">
-    </div>
-  </section>
+<!-- SECTION 3 -->
+<section class="block reveal">
+  <div class="text">
+    <h2>Système d’authentification</h2>
+    <p>
+      DevStore intègre un système d’authentification complet avec Supabase ou fallback local.
+      Il permet de gérer les utilisateurs, l’accès aux démos et l’administration de la plateforme.
+    </p>
+  </div>
 
-  <script>
-    gsap.registerPlugin(ScrollTrigger);
+  <div class="image">
+    <img src="../img/dev3.png" alt="Auth DevStore">
+  </div>
+</section>
 
-    gsap.utils.toArray(".reveal").forEach((elem) => {
-      gsap.from(elem, {
-        scrollTrigger: {
-          trigger: elem,
-          start: "top 80%",
-          toggleActions: "play none none none",
-        },
-        opacity: 0,
-        y: 80,
-        duration: 1,
-        ease: "power3.out"
-      });
-    });
-  </script>
+<!-- SECTION 4 -->
+<section class="block reverse reveal">
+  <div class="text">
+    <h2>Panel Admin avancé</h2>
+    <p>
+      Un dashboard admin permet d’ajouter, modifier et supprimer les produits.
+      Chaque système est structuré avec titre, description, tags, prix et lien de démo.
+      Cela rend la plateforme totalement dynamique et évolutive.
+    </p>
+  </div>
+
+  <div class="image">
+    <img src="../img/dev4.png" alt="Admin DevStore">
+  </div>
+</section>
+
+<!-- SECTION 5 -->
+<section class="block reveal">
+  <div class="text">
+    <h2>Technologies utilisées</h2>
+    <p>
+      Ce projet est développé avec :
+      HTML5, CSS3, JavaScript, GSAP (animations avancées), ScrollTrigger,
+      Supabase (backend), et intégration iframe pour les démos.
+      L’ensemble est optimisé pour la performance et l’expérience utilisateur.
+    </p>
+  </div>
+
+  <div class="image">
+    <img src="../img/dev5.png" alt="Tech DevStore">
+  </div>
+</section>
+
+<script>
+gsap.registerPlugin(ScrollTrigger);
+
+gsap.utils.toArray(".reveal").forEach((elem) => {
+  gsap.from(elem, {
+    scrollTrigger: {
+      trigger: elem,
+      start: "top 80%",
+    },
+    opacity: 0,
+    y: 80,
+    duration: 1,
+    ease: "power3.out"
+  });
+});
+</script>
 
 </body>
-
 </html>
