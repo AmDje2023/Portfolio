@@ -4,132 +4,126 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>DevStore</title>
+  <title>Gaming-ste-dz</title>
 
+  <!-- Google Font -->
   <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="../css/projet-devstore.css">
 
+  <!-- Style perso -->
+  <link rel="stylesheet" href="../css/projet1.css">
+
+  <!-- GSAP -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
 </head>
 
 <body>
-
-<a href="projects.html" class="btn-retour">⬅ Retour</a>
+<a href="project.html" class="btn-retour">⬅ Retour</a>
 
 <header>
-  <h1>DevStore — Plateforme de solutions numériques</h1>
+  <h1>Pourquoi ce site ?</h1>
   <p>
-    DevStore est une plateforme moderne développée pour présenter et tester des solutions numériques complètes :
-    sites web, applications et jeux interactifs.  
-    Le projet a été conçu avec une interface hautement moderne, des animations fluides et une expérience utilisateur immersive.
+    Ce site a été réalisé avec une véritable passion pour le gaming. Il reflète un univers moderne,
+    immersif et dynamique, conçu pour offrir une expérience unique aux utilisateurs. Grâce à
+    l’utilisation de technologies récentes, ce projet met en avant à la fois la créativité,
+    la performance et le design interactif.
   </p>
-
-  <p>
-    Ce projet est réalisé avec des technologies web modernes telles que HTML5, CSS3, JavaScript, GSAP pour les animations,
-    et Supabase pour la gestion des données et de l’authentification.
-    L’objectif est de proposer un système professionnel, esthétique et fonctionnel prêt pour un usage réel.
-  </p>
-
-  <p style="color:#7c5cfc; font-weight:600;">
-    ✔ Ce projet est entièrement responsive, bien structuré et optimisé pour les performances.
-  </p>
-
 </header>
+
+<section class="demo">
+  <h2>Voir la demo</h2>
+
+  <a href="https://gaming-site-dz.netlify.app/" target="_blank">
+    <img src="../img/game1.png" alt="Demo du projet">
+    <div class="overlay">Cliquez ici</div>
+  </a>
+</section>
 
 <!-- SECTION 1 -->
 <section class="block reveal">
   <div class="text">
-    <h2>Interface moderne & immersive</h2>
+    <h2>Une expérience immersive en 3D</h2>
     <p>
-      L’interface de DevStore est conçue avec un design premium, utilisant des gradients, des effets de glow et une typographie moderne.
-      L’objectif est de donner une sensation de produit haut de gamme dès la première interaction.
+      Le site intègre des éléments en 3D afin de plonger l’utilisateur dans un environnement interactif.
+      Cette approche permet de rendre la navigation plus vivante et engageante, en donnant une sensation
+      de profondeur et de réalisme inspirée des jeux vidéo modernes.
     </p>
   </div>
 
   <div class="image">
-    <img src="../img/dev1.png" alt="Interface DevStore">
+    <img src="../img/game1.png">
   </div>
 </section>
 
 <!-- SECTION 2 -->
 <section class="block reverse reveal">
   <div class="text">
-    <h2>Système de démos interactives</h2>
+    <h2>Animations fluides avec GSAP</h2>
     <p>
-      Chaque produit dispose d’une démo interactive intégrée via iframe.
-      Les utilisateurs peuvent tester directement les projets avant toute prise de contact ou achat.
+      Les animations du site sont réalisées grâce à la bibliothèque GSAP et son plugin ScrollTrigger.
+      Cela permet de déclencher des effets visuels au scroll, rendant l’expérience utilisateur plus
+      dynamique et fluide tout en mettant en valeur le contenu de manière progressive.
     </p>
   </div>
 
   <div class="image">
-    <img src="../img/dev2.png" alt="Démos interactives DevStore">
+    <img src="../img/game2.png">
   </div>
 </section>
 
 <!-- SECTION 3 -->
 <section class="block reveal">
   <div class="text">
-    <h2>Système d’authentification</h2>
+    <h2>Technologies modernes</h2>
     <p>
-      DevStore intègre un système d’authentification complet avec Supabase ou fallback local.
-      Il permet de gérer les utilisateurs, l’accès aux démos et l’administration de la plateforme.
+      Ce projet repose sur des technologies web récentes telles que HTML5, CSS3 et JavaScript,
+      combinées à des bibliothèques puissantes pour améliorer les performances et le rendu visuel.
+      L’objectif est de proposer un site rapide, responsive et compatible avec les standards actuels.
     </p>
   </div>
 
   <div class="image">
-    <img src="../img/dev3.png" alt="Auth DevStore">
+    <img src="../img/game4.png">
   </div>
 </section>
 
 <!-- SECTION 4 -->
 <section class="block reverse reveal">
   <div class="text">
-    <h2>Panel Admin avancé</h2>
+    <h2>Important : Activer WebGL</h2>
     <p>
-      Un dashboard admin permet d’ajouter, modifier et supprimer les produits.
-      Chaque système est structuré avec titre, description, tags, prix et lien de démo.
-      Cela rend la plateforme totalement dynamique et évolutive.
+      Pour profiter pleinement de toutes les fonctionnalités du site, il est recommandé d’activer WebGL
+      sur votre navigateur.
+      <br><br>
+      ✔ Sur Google Chrome :<br>
+      - Tapez <strong>chrome://settings/system</strong><br>
+      - Activez l’option <strong>"Utiliser l’accélération matérielle si disponible"</strong><br>
+      <br>
+      ✔ Sur Firefox :<br>
+      - Tapez <strong>about:config</strong><br>
+      - Recherchez <strong>webgl.disabled</strong> et mettez la valeur sur <strong>false</strong>
+      <br><br>
+      Une fois activé, redémarrez votre navigateur pour une expérience optimale.
     </p>
-  </div>
-
-  <div class="image">
-    <img src="../img/dev4.png" alt="Admin DevStore">
-  </div>
-</section>
-
-<!-- SECTION 5 -->
-<section class="block reveal">
-  <div class="text">
-    <h2>Technologies utilisées</h2>
-    <p>
-      Ce projet est développé avec :
-      HTML5, CSS3, JavaScript, GSAP (animations avancées), ScrollTrigger,
-      Supabase (backend), et intégration iframe pour les démos.
-      L’ensemble est optimisé pour la performance et l’expérience utilisateur.
-    </p>
-  </div>
-
-  <div class="image">
-    <img src="../img/dev5.png" alt="Tech DevStore">
   </div>
 </section>
 
 <script>
-gsap.registerPlugin(ScrollTrigger);
+  gsap.registerPlugin(ScrollTrigger);
 
-gsap.utils.toArray(".reveal").forEach((elem) => {
-  gsap.from(elem, {
-    scrollTrigger: {
-      trigger: elem,
-      start: "top 80%",
-    },
-    opacity: 0,
-    y: 80,
-    duration: 1,
-    ease: "power3.out"
+  gsap.utils.toArray(".reveal").forEach((elem) => {
+    gsap.from(elem, {
+      scrollTrigger: {
+        trigger: elem,
+        start: "top 80%",
+        toggleActions: "play none none none",
+      },
+      opacity: 0,
+      y: 80,
+      duration: 1,
+      ease: "power3.out"
+    });
   });
-});
 </script>
 
 </body>
